@@ -78,7 +78,7 @@ export const BulkDeleteIssuesModal: React.FC<Props> = observer((props) => {
       setToastAlert({
         type: "error",
         title: "Error!",
-        message: "Please select at least one issue.",
+        message: "Please select at least one Task.",
       });
       return;
     }
@@ -93,7 +93,7 @@ export const BulkDeleteIssuesModal: React.FC<Props> = observer((props) => {
         setToastAlert({
           type: "success",
           title: "Success!",
-          message: "Issues deleted successfully!",
+          message: "Task deleted successfully!",
         });
 
         handleClose();
@@ -164,7 +164,7 @@ export const BulkDeleteIssuesModal: React.FC<Props> = observer((props) => {
                         <li className="p-2">
                           {query === "" && (
                             <h2 className="mb-2 mt-4 px-3 text-xs font-semibold text-custom-text-100">
-                              Select issues to delete
+                              Select Task to delete
                             </h2>
                           )}
                           <ul className="text-sm text-custom-text-200">
@@ -204,7 +204,7 @@ export const BulkDeleteIssuesModal: React.FC<Props> = observer((props) => {
                         <div className="flex flex-col items-center justify-center gap-4 px-3 py-8 text-center">
                           <LayersIcon height="56" width="56" />
                           <h3 className="text-custom-text-200">
-                            No issues found. Create a new issue with{" "}
+                            No task found. Create a new task with{" "}
                             <pre className="inline rounded bg-custom-background-80 px-2 py-1">C</pre>.
                           </h3>
                         </div>
@@ -218,7 +218,7 @@ export const BulkDeleteIssuesModal: React.FC<Props> = observer((props) => {
                         Cancel
                       </Button>
                       <Button variant="danger" size="sm" onClick={handleSubmit(handleDelete)} loading={isSubmitting}>
-                        {isSubmitting ? "Deleting..." : "Delete selected issues"}
+                        {isSubmitting ? "Deleting..." : "Delete selected task"}
                       </Button>
                     </div>
                   )}

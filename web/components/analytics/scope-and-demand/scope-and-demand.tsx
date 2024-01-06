@@ -60,8 +60,8 @@ export const ScopeAndDemand: React.FC<Props> = (props) => {
                   count: user?.count,
                   id: user?.created_by__id,
                 }))}
-                title="Most issues created"
-                emptyStateMessage="Co-workers and the number of issues created by them appears here."
+                title="Most tasks created"
+                emptyStateMessage="Co-workers and the number of tasks created by them appears here."
                 workspaceSlug={workspaceSlug?.toString() ?? ""}
               />
               <AnalyticsLeaderBoard
@@ -73,8 +73,8 @@ export const ScopeAndDemand: React.FC<Props> = (props) => {
                   count: user?.count,
                   id: user?.assignees__id,
                 }))}
-                title="Most issues closed"
-                emptyStateMessage="Co-workers and the number of issues closed by them appears here."
+                title="Most tasks closed"
+                emptyStateMessage="Co-workers and the number of tasks closed by them appears here."
                 workspaceSlug={workspaceSlug?.toString() ?? ""}
               />
               <div className={fullScreen ? "md:col-span-2" : ""}>

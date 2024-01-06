@@ -153,7 +153,7 @@ export const ParentIssuesListModal: React.FC<Props> = ({
                       <div className="flex flex-col items-center justify-center gap-4 px-3 py-8 text-center">
                         <LayersIcon height="52" width="52" />
                         <h3 className="text-custom-text-200">
-                          No issues found. Create a new issue with{" "}
+                          No Task found. Create a new Task with{" "}
                           <pre className="inline rounded bg-custom-background-80 px-2 py-1 text-sm">C</pre>.
                         </h3>
                       </div>

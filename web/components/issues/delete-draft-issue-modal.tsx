@@ -59,7 +59,7 @@ export const DeleteDraftIssueModal: React.FC<Props> = observer((props) => {
 
         setToastAlert({
           title: "Success",
-          message: "Draft Issue deleted successfully",
+          message: "Draft task deleted successfully",
           type: "success",
         });
       })
@@ -109,16 +109,16 @@ export const DeleteDraftIssueModal: React.FC<Props> = observer((props) => {
                       <AlertTriangle className="h-6 w-6 text-red-600" aria-hidden="true" />
                     </span>
                     <span className="flex items-center justify-start">
-                      <h3 className="text-xl font-medium 2xl:text-2xl">Delete Draft Issue</h3>
+                      <h3 className="text-xl font-medium 2xl:text-2xl">Delete Draft task</h3>
                     </span>
                   </div>
                   <span>
                     <p className="text-sm text-custom-text-200">
-                      Are you sure you want to delete issue{" "}
+                      Are you sure you want to delete task{" "}
                       <span className="break-words font-medium text-custom-text-100">
                         {data?.project_detail.identifier}-{data?.sequence_id}
                       </span>
-                      {""}? All of the data related to the draft issue will be permanently removed. This action cannot
+                      {""}? All of the data related to the draft task will be permanently removed. This action cannot
                       be undone.
                     </p>
                   </span>
@@ -127,7 +127,7 @@ export const DeleteDraftIssueModal: React.FC<Props> = observer((props) => {
                       Cancel
                     </Button>
                     <Button variant="danger" size="sm" tabIndex={1} onClick={handleDeletion} loading={isDeleteLoading}>
-                      {isDeleteLoading ? "Deleting..." : "Delete Issue"}
+                      {isDeleteLoading ? "Deleting..." : "Delete task"}
                     </Button>
                   </div>
                 </div>

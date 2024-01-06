@@ -41,8 +41,8 @@ const CustomErrorComponent = () => {
             <p className="mx-auto w-1/2 text-sm text-custom-text-200">
               We{"'"}re Sorry! An exception has been detected, and our engineering team has been notified. We apologize
               for any inconvenience this may have caused. Please reach out to our engineering team at{" "}
-              <a href="mailto:support@plane.so" className="text-custom-primary">
-                support@plane.so
+              <a href="mailto:support" className="text-custom-primary">
+                support
               </a>{" "}
               or on our{" "}
               <a

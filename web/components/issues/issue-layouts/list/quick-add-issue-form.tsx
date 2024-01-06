@@ -33,9 +33,9 @@ const Inputs: FC<IInputProps> = (props) => {
       <input
         type="text"
         autoComplete="off"
-        placeholder="Issue Title"
+        placeholder="Task Title"
         {...register(formKey, {
-          required: "Issue title is required.",
+          required: "Task Title is required.",
         })}
         className="w-full rounded-md bg-transparent px-2 py-3 text-sm font-medium leading-5 text-custom-text-200 outline-none"
       />
@@ -132,7 +132,7 @@ export const ListQuickAddIssueForm: FC<IListQuickAddIssueForm> = observer((props
           >
             <Inputs formKey={"name"} register={register} setFocus={setFocus} projectDetail={projectDetail} />
           </form>
-          <div className="px-3 py-2 text-xs italic text-custom-text-200">{`Press 'Enter' to add another issue`}</div>
+          <div className="px-3 py-2 text-xs italic text-custom-text-200">{`Press 'Enter' to add another Task`}</div>
         </div>
       ) : (
         <div
@@ -140,7 +140,7 @@ export const ListQuickAddIssueForm: FC<IListQuickAddIssueForm> = observer((props
           onClick={() => setIsOpen(true)}
         >
           <PlusIcon className="h-3.5 w-3.5 stroke-2" />
-          <span className="text-sm font-medium text-custom-primary-100">New Issue</span>
+          <span className="text-sm font-medium text-custom-primary-100">New Task</span>
         </div>
       )}
     </div>

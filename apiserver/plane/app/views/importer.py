@@ -480,7 +480,7 @@ class BulkImportModulesEndpoint(BaseAPIView):
                     ModuleLink(
                         module=module,
                         url=module_data.get("link", {}).get(
-                            "url", "https://plane.so"
+                            "url", "/"
                         ),
                         title=module_data.get("link", {}).get(
                             "title", "Original Issue"

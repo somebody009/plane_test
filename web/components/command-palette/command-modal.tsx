@@ -281,7 +281,7 @@ export const CommandModal: React.FC = observer(() => {
                           >
                             <div className="flex items-center gap-2 text-custom-text-200">
                               <LayersIcon className="h-3.5 w-3.5" />
-                              Create new issue
+                              Create New Task
                             </div>
                             <kbd>C</kbd>
                           </Command.Item>

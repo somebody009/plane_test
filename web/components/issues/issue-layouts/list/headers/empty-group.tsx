@@ -18,7 +18,7 @@ export const EmptyHeader: React.FC<IEmptyHeader> = observer((props) => {
 
   return (
     <HeaderGroupByCard
-      title={column_value?.title || "All Issues"}
+      title={column_value?.title || "All Tasks"}
       count={issues_count}
       issuePayload={{}}
       disableIssueCreation={disableIssueCreation}

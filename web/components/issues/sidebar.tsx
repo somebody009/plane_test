@@ -152,7 +152,7 @@ export const IssueDetailsSidebar: React.FC<Props> = observer((props) => {
       setToastAlert({
         type: "success",
         title: "Link Copied!",
-        message: "Issue link copied to clipboard.",
+        message: "Tasks link copied to clipboard.",
       });
     });
   };

@@ -46,7 +46,7 @@ export const SidebarRelatesSelect: React.FC<Props> = (props) => {
       setToastAlert({
         type: "error",
         title: "Error!",
-        message: "Please select at least one issue.",
+        message: "Please select at least one Task.",
       });
 
       return;
@@ -159,7 +159,7 @@ export const SidebarRelatesSelect: React.FC<Props> = (props) => {
             onClick={() => setIsRelatesToModalOpen(true)}
             disabled={disabled}
           >
-            Select issues
+            Select Task
           </button>
         </div>
       </div>

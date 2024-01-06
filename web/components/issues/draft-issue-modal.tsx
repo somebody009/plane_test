@@ -173,7 +173,7 @@ export const CreateUpdateDraftIssueModal: React.FC<IssuesModalProps> = observer(
         setToastAlert({
           type: "success",
           title: "Success!",
-          message: "Issue created successfully.",
+          message: "Task created successfully.",
         });
 
         if (payload.assignees?.some((assignee) => assignee === user?.id)) mutate(USER_ISSUE(workspaceSlug.toString()));
@@ -182,7 +182,7 @@ export const CreateUpdateDraftIssueModal: React.FC<IssuesModalProps> = observer(
         setToastAlert({
           type: "error",
           title: "Error!",
-          message: "Issue could not be created. Please try again.",
+          message: "Task could not be created. Please try again.",
         });
       });
 
@@ -211,14 +211,14 @@ export const CreateUpdateDraftIssueModal: React.FC<IssuesModalProps> = observer(
         setToastAlert({
           type: "success",
           title: "Success!",
-          message: "Issue updated successfully.",
+          message: "Task updated successfully.",
         });
       })
       .catch(() => {
         setToastAlert({
           type: "error",
           title: "Error!",
-          message: "Issue could not be updated. Please try again.",
+          message: "Task could not be updated. Please try again.",
         });
       });
   };
@@ -251,7 +251,7 @@ export const CreateUpdateDraftIssueModal: React.FC<IssuesModalProps> = observer(
         setToastAlert({
           type: "success",
           title: "Success!",
-          message: "Issue created successfully.",
+          message: "Task created successfully.",
         });
 
         if (!createMore) onClose();
@@ -264,7 +264,7 @@ export const CreateUpdateDraftIssueModal: React.FC<IssuesModalProps> = observer(
         setToastAlert({
           type: "error",
           title: "Error!",
-          message: "Issue could not be created. Please try again.",
+          message: "Task could not be created. Please try again.",
         });
       });
   };

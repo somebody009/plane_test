@@ -14,7 +14,7 @@ type Props = {
 
 export const ProfilePriorityDistribution: React.FC<Props> = ({ userProfile }) => (
   <div className="flex flex-col space-y-2">
-    <h3 className="text-lg font-medium">Issues by Priority</h3>
+    <h3 className="text-lg font-medium">Tasks by Priority</h3>
     {userProfile ? (
       <div className="flex-grow rounded border border-custom-border-100">
         {userProfile.priority_distribution.length > 0 ? (
@@ -67,7 +67,7 @@ export const ProfilePriorityDistribution: React.FC<Props> = ({ userProfile }) =>
           <div className="flex-grow p-7">
             <ProfileEmptyState
               title="No Data yet"
-              description="Create issues to view the them by priority in the graph for better analysis."
+              description="Create Tasks to view the them by priority in the graph for better analysis."
               image={emptyBarGraph}
             />
           </div>

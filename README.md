@@ -1,7 +1,7 @@
 <br /><br />
 
 <p align="center">
-<a href="https://plane.so">
+<a href="/">
   <img src="https://plane-marketing.s3.ap-south-1.amazonaws.com/plane-readme/plane_logo_.webp" alt="Plane Logo" width="70">
 </a>
 </p>
@@ -33,7 +33,7 @@
     </a>
 </p>
 
-Meet [Plane](https://plane.so). An open-source software development tool to manage issues, sprints, and product roadmaps with peace of mind 🧘‍♀️.
+Meet [Plane](/). An open-source software development tool to manage issues, sprints, and product roadmaps with peace of mind 🧘‍♀️.
 
 > Plane is still in its early days, not everything will be perfect yet, and hiccups may happen. Please let us know of any suggestions, ideas, or bugs that you encounter on our [Discord](https://discord.com/invite/A92xrEGCge) or GitHub issues, and we will use your feedback to improve on our upcoming releases.
 
@@ -80,7 +80,7 @@ For self hosting environment setup, visit the [Self Hosting](https://docs.plane.
 ## 📸 Screenshots
 
 <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="/" target="_blank">
       <img
         src="https://plane-marketing.s3.ap-south-1.amazonaws.com/plane-readme/plane_views_dark_mode.webp"
         alt="Plane Views"
@@ -89,7 +89,7 @@ For self hosting environment setup, visit the [Self Hosting](https://docs.plane.
     </a>
   </p>
 <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="/" target="_blank">
       <img
         src="https://plane-marketing.s3.ap-south-1.amazonaws.com/plane-readme/plane_issue_detail_dark_mode.webp"
         alt="Plane Issue Details"
@@ -98,7 +98,7 @@ For self hosting environment setup, visit the [Self Hosting](https://docs.plane.
     </a>
   </p>
   <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="/" target="_blank">
       <img
         src="https://plane-marketing.s3.ap-south-1.amazonaws.com/plane-readme/plane_cycles_modules_dark_mode.webp"
         alt="Plane Cycles and Modules"
@@ -107,7 +107,7 @@ For self hosting environment setup, visit the [Self Hosting](https://docs.plane.
     </a>
   </p>
   <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="/" target="_blank">
       <img
         src="https://plane-marketing.s3.ap-south-1.amazonaws.com/plane-readme/plane_analytics_dark_mode.webp"
         alt="Plane Analytics"
@@ -116,7 +116,7 @@ For self hosting environment setup, visit the [Self Hosting](https://docs.plane.
     </a>
   </p>
    <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="/" target="_blank">
       <img
         src="https://plane-marketing.s3.ap-south-1.amazonaws.com/plane-readme/plane_pages_dark_mode.webp"
         alt="Plane Pages"
@@ -126,7 +126,7 @@ For self hosting environment setup, visit the [Self Hosting](https://docs.plane.
   </p>
 </p>
    <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="/" target="_blank">
       <img
         src="https://plane-marketing.s3.ap-south-1.amazonaws.com/plane-readme/plane_commad_k_dark_mode.webp"
         alt="Plane Command Menu"

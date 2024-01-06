@@ -235,7 +235,7 @@ export const DraftIssueForm: FC<IssueFormProps> = observer((props) => {
     aiService
       .createGptTask(workspaceSlug as string, projectId as string, {
         prompt: issueName,
-        task: "Generate a proper description for this issue.",
+        task: "Generate a proper description for this task.",
       })
       .then((res) => {
         if (res.response === "")
@@ -243,7 +243,7 @@ export const DraftIssueForm: FC<IssueFormProps> = observer((props) => {
             type: "error",
             title: "Error!",
             message:
-              "Issue title isn't informative enough to generate the description. Please try with a different title.",
+              "Task Title isn't informative enough to generate the description. Please try with a different title.",
           });
         else handleAiAssistance(res.response_html);
       })
@@ -329,7 +329,7 @@ export const DraftIssueForm: FC<IssueFormProps> = observer((props) => {
               />
             )}
             <h3 className="text-xl font-semibold leading-6 text-custom-text-100">
-              {status ? "Update" : "Create"} Issue
+              {status ? "Update" : "Create"} Task
             </h3>
           </div>
           {watch("parent") &&
@@ -574,15 +574,15 @@ export const DraftIssueForm: FC<IssueFormProps> = observer((props) => {
                     {watch("parent") ? (
                       <>
                         <CustomMenu.MenuItem onClick={() => setParentIssueListModalOpen(true)}>
-                          Change parent issue
+                          Change parent Task
                         </CustomMenu.MenuItem>
                         <CustomMenu.MenuItem onClick={() => setValue("parent", null)}>
-                          Remove parent issue
+                          Remove parent Task
                         </CustomMenu.MenuItem>
                       </>
                     ) : (
                       <CustomMenu.MenuItem onClick={() => setParentIssueListModalOpen(true)}>
-                        Select Parent Issue
+                        Select Parent Task
                       </CustomMenu.MenuItem>
                     )}
                   </CustomMenu>
@@ -621,7 +621,7 @@ export const DraftIssueForm: FC<IssueFormProps> = observer((props) => {
                 handleCreateUpdateIssue(formData, data ? "convertToNewIssue" : "createNewIssue")
               )}
             >
-              {isSubmitting ? "Saving..." : "Add Issue"}
+              {isSubmitting ? "Saving..." : "Add Task"}
             </Button>
           </div>
         </div>

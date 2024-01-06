@@ -78,10 +78,10 @@ export const HeaderGroupByCard = observer(
                 }
               >
                 <CustomMenu.MenuItem onClick={() => setIsOpen(true)}>
-                  <span className="flex items-center justify-start gap-2">Create issue</span>
+                  <span className="flex items-center justify-start gap-2">Create Task</span>
                 </CustomMenu.MenuItem>
                 <CustomMenu.MenuItem onClick={() => setOpenExistingIssueListModal(true)}>
-                  <span className="flex items-center justify-start gap-2">Add an existing issue</span>
+                  <span className="flex items-center justify-start gap-2">Add an existing task</span>
                 </CustomMenu.MenuItem>
               </CustomMenu>
             ) : (

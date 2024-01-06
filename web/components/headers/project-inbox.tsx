@@ -45,7 +45,7 @@ export const ProjectInboxHeader: FC = observer(() => {
             <Breadcrumbs.BreadcrumbItem
               type="text"
               icon={<LayersIcon className="h-4 w-4 text-custom-text-300" />}
-              label="Inbox Issues"
+              label="Inbox Task"
             />
           </Breadcrumbs>
         </div>
@@ -54,7 +54,7 @@ export const ProjectInboxHeader: FC = observer(() => {
       <div className="flex items-center gap-2">
         <CreateInboxIssueModal isOpen={createIssueModal} onClose={() => setCreateIssueModal(false)} />
         <Button variant="primary" prependIcon={<Plus />} size="sm" onClick={() => setCreateIssueModal(true)}>
-          Add Issue
+          Add Task
         </Button>
       </div>
     </div>

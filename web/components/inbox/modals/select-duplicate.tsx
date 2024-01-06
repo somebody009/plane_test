@@ -121,7 +121,7 @@ export const SelectDuplicateInboxIssueModal: React.FC<Props> = (props) => {
                       {filteredIssues.length > 0 ? (
                         <li className="p-2">
                           {query === "" && (
-                            <h2 className="mb-2 mt-4 px-3 text-xs font-semibold text-custom-text-100">Select issue</h2>
+                            <h2 className="mb-2 mt-4 px-3 text-xs font-semibold text-custom-text-100">Select tasks</h2>
                           )}
                           <ul className="text-sm text-custom-text-100">
                             {filteredIssues.map((issue) => (
@@ -156,7 +156,7 @@ export const SelectDuplicateInboxIssueModal: React.FC<Props> = (props) => {
                         <div className="flex flex-col items-center justify-center gap-4 px-3 py-8 text-center">
                           <LayersIcon height="56" width="56" />
                           <h3 className="text-sm text-custom-text-200">
-                            No issues found. Create a new issue with{" "}
+                            No tasks found. Create a new task with{" "}
                             <pre className="inline rounded bg-custom-background-80 px-2 py-1">C</pre>.
                           </h3>
                         </div>

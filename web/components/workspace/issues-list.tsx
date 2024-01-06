@@ -34,7 +34,7 @@ export const IssuesList: React.FC<Props> = ({ issues, type }) => {
 
   return (
     <div>
-      <h3 className="mb-2 font-semibold capitalize">{type} Issues</h3>
+      <h3 className="mb-2 font-semibold capitalize">{type} Tasks</h3>
       {issues ? (
         <div className="h-[calc(100%-2.25rem)] rounded-[10px] border border-custom-border-200 bg-custom-background-100 p-4 text-sm">
           <div
@@ -43,7 +43,7 @@ export const IssuesList: React.FC<Props> = ({ issues, type }) => {
             }`}
           >
             <h4 className="capitalize">{type}</h4>
-            <h4 className="col-span-2">Issue</h4>
+            <h4 className="col-span-2">Task</h4>
             <h4>{type === "overdue" ? "Due" : "Start"} Date</h4>
           </div>
           <div className="max-h-72 overflow-y-scroll">
@@ -79,8 +79,8 @@ export const IssuesList: React.FC<Props> = ({ issues, type }) => {
                 <div className="my-5 flex flex-col items-center gap-4">
                   <LayersIcon height={60} width={60} />
                   <span className="text-custom-text-200">
-                    No issues found. Use <pre className="inline rounded bg-custom-background-80 px-2 py-1">C</pre>{" "}
-                    shortcut to create a new issue
+                    No Tasks found. Use <pre className="inline rounded bg-custom-background-80 px-2 py-1">C</pre>{" "}
+                    shortcut to create a new Tasks
                   </span>
                 </div>
               </div>

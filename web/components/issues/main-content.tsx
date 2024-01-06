@@ -187,7 +187,7 @@ export const IssueMainContent: React.FC<Props> = observer((props) => {
                 siblingIssuesList.length > 0 ? (
                   <>
                     <h2 className="mb-1 border-b border-custom-border-300 px-2 pb-1 text-xs font-medium text-custom-text-200">
-                      Sibling issues
+                      Sibling Task
                     </h2>
                     {siblingIssuesList.map((issue) => (
                       <CustomMenu.MenuItem
@@ -204,7 +204,7 @@ export const IssueMainContent: React.FC<Props> = observer((props) => {
                   </>
                 ) : (
                   <p className="flex items-center gap-2 whitespace-nowrap px-1 py-1 text-left text-xs text-custom-text-200">
-                    No sibling issues
+                    No sibling Task
                   </p>
                 )
               ) : null}
@@ -213,7 +213,7 @@ export const IssueMainContent: React.FC<Props> = observer((props) => {
                 className="flex items-center gap-2 py-2 text-red-500"
               >
                 <MinusCircle className="h-4 w-4" />
-                <span> Remove Parent Issue</span>
+                <span> Remove Parent Task</span>
               </CustomMenu.MenuItem>
             </CustomMenu>
           </div>

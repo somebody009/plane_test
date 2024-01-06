@@ -30,7 +30,7 @@ const workspaceLinks = (workspaceSlug: string) => [
   },
   {
     Icon: CheckCircle,
-    name: "All Issues",
+    name: "All Tasks",
     href: `/${workspaceSlug}/workspace-views/all-issues`,
   },
 ];

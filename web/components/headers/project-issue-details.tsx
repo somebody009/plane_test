@@ -56,7 +56,7 @@ export const ProjectIssueDetailsHeader: FC = observer(() => {
             <Breadcrumbs.BreadcrumbItem
               type="text"
               icon={<LayersIcon className="h-4 w-4 text-custom-text-300" />}
-              label="Issues"
+              label="Tasks"
               link={`/${workspaceSlug}/projects/${projectId}/issues`}
             />
 

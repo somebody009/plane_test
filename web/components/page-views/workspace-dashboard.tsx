@@ -86,7 +86,7 @@ export const WorkspaceDashboardView = observer(() => {
             <NewEmptyState
               image={emptyProject}
               title="Overview of your projects, activity, and metrics"
-              description="When you have created a project and have issues assigned, you will see metrics, activity, and things you care about here. This is personalized to your role in projects, so project admins will see more than members."
+              description="When you have created a project and have Task assigned, you will see metrics, activity, and things you care about here. This is personalized to your role in projects, so project admins will see more than members."
               comicBox={{
                 title: "Everything starts with a project in Plane",
                 direction: "right",

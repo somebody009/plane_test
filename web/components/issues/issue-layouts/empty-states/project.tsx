@@ -22,19 +22,19 @@ export const ProjectEmptyState: React.FC = observer(() => {
   return (
     <div className="grid h-full w-full place-items-center">
       <NewEmptyState
-        title="Create an issue and assign it to someone, even yourself"
-        description="Think of issues as jobs, tasks, work, or JTBD. Which we like. An issue and its sub-issues are usually time-based actionables assigned to members of your team. Your team creates, assigns, and completes issues to move your project towards its goal."
+        title="Create an Task and assign it to someone, even yourself"
+        description="Think of Task as jobs, tasks, work, or JTBD. Which we like. An Task and its sub-Task are usually time-based actionables assigned to members of your team. Your team creates, assigns, and completes Task to move your project towards its goal."
         image={emptyIssue}
         comicBox={{
-          title: "Issues are building blocks in Plane.",
+          title: "Task are building blocks in DSs.",
           direction: "left",
           description:
-            "Redesign the Plane UI, Rebrand the company, or Launch the new fuel injection system are examples of issues that likely have sub-issues.",
+            "Redesign the Plane UI, Rebrand the company, or Launch the new fuel injection system are examples of Task that likely have sub-Task.",
         }}
         primaryButton={
           isEditingAllowed
             ? {
-                text: "Create your first issue",
+                text: "Create your first Task",
                 icon: <PlusIcon className="h-3 w-3" strokeWidth={2} />,
                 onClick: () => {
                   setTrackElement("PROJECT_EMPTY_STATE");

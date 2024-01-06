@@ -253,7 +253,7 @@ export const CreateUpdateIssueModal: React.FC<IssuesModalProps> = observer((prop
           setToastAlert({
             type: "success",
             title: "Success!",
-            message: "Issue created successfully.",
+            message: "Task created successfully.",
           });
           postHogEventTracker(
             "ISSUE_CREATED",
@@ -274,7 +274,7 @@ export const CreateUpdateIssueModal: React.FC<IssuesModalProps> = observer((prop
         setToastAlert({
           type: "error",
           title: "Error!",
-          message: err.detail ?? "Issue could not be created. Please try again.",
+          message: err.detail ?? "Task could not be created. Please try again.",
         });
         postHogEventTracker(
           "ISSUE_CREATED",
@@ -305,7 +305,7 @@ export const CreateUpdateIssueModal: React.FC<IssuesModalProps> = observer((prop
         setToastAlert({
           type: "success",
           title: "Success!",
-          message: "Draft Issue created successfully.",
+          message: "Draft Task created successfully.",
         });
         handleClose();
         setActiveProject(null);
@@ -320,7 +320,7 @@ export const CreateUpdateIssueModal: React.FC<IssuesModalProps> = observer((prop
         setToastAlert({
           type: "error",
           title: "Error!",
-          message: err.detail ?? "Issue could not be created. Please try again.",
+          message: err.detail ?? "Task could not be created. Please try again.",
         });
       });
   };
@@ -336,7 +336,7 @@ export const CreateUpdateIssueModal: React.FC<IssuesModalProps> = observer((prop
         setToastAlert({
           type: "success",
           title: "Success!",
-          message: "Issue updated successfully.",
+          message: "Task updated successfully.",
         });
         postHogEventTracker(
           "ISSUE_UPDATED",
@@ -355,7 +355,7 @@ export const CreateUpdateIssueModal: React.FC<IssuesModalProps> = observer((prop
         setToastAlert({
           type: "error",
           title: "Error!",
-          message: err.detail ?? "Issue could not be updated. Please try again.",
+          message: err.detail ?? "Task could not be updated. Please try again.",
         });
         postHogEventTracker(
           "ISSUE_UPDATED",

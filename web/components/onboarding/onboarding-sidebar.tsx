@@ -40,7 +40,7 @@ const workspaceLinks = [
   },
   {
     Icon: CheckCircle,
-    name: "All Issues",
+    name: "All Tasks",
   },
   {
     Icon: Bell,
@@ -50,7 +50,7 @@ const workspaceLinks = [
 
 const projectLinks = [
   {
-    name: "Issues",
+    name: "Tasks",
     Icon: LayersIcon,
   },
   {
@@ -233,7 +233,7 @@ export const OnboardingSidebar: React.FC<Props> = (props) => {
           >
             <div className={`relative flex flex-shrink-0 flex-grow items-center gap-2 rounded py-1.5 outline-none`}>
               <PenSquare className="h-4 w-4 text-custom-sidebar-text-300" />
-              {<span className="text-sm font-medium">New Issue</span>}
+              {<span className="text-sm font-medium">New Task</span>}
             </div>
           </div>
 
@@ -268,7 +268,7 @@ export const OnboardingSidebar: React.FC<Props> = (props) => {
             <div className="mb-3 flex w-4/5 items-center justify-between text-base font-medium text-custom-text-200">
               <div className="flex items-center gap-x-2">
                 <Image src={projectEmoji} alt="Plane Logo" className="h-4 w-4" />
-                <span> Plane</span>
+                <span> DSS</span>
               </div>
 
               <ChevronDown className="h-4 w-4" />

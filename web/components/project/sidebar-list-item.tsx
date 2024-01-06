@@ -40,7 +40,7 @@ type Props = {
 
 const navigation = (workspaceSlug: string, projectId: string) => [
   {
-    name: "Issues",
+    name: "Tasks",
     href: `/${workspaceSlug}/projects/${projectId}/issues`,
     Icon: LayersIcon,
   },
@@ -257,7 +257,7 @@ export const ProjectSidebarListItem: React.FC<Props> = observer((props) => {
                       <Link href={`/${workspaceSlug}/projects/${project?.id}/archived-issues/`}>
                         <div className="flex items-center justify-start gap-2">
                           <ArchiveIcon className="h-3.5 w-3.5 stroke-[1.5]" />
-                          <span>Archived Issues</span>
+                          <span>Archived Tasks</span>
                         </div>
                       </Link>
                     </CustomMenu.MenuItem>
@@ -266,7 +266,7 @@ export const ProjectSidebarListItem: React.FC<Props> = observer((props) => {
                     <Link href={`/${workspaceSlug}/projects/${project?.id}/draft-issues/`}>
                       <div className="flex items-center justify-start gap-2">
                         <PenSquare className="h-3.5 w-3.5 stroke-[1.5] text-custom-text-300" />
-                        <span>Draft Issues</span>
+                        <span>Draft Tasks</span>
                       </div>
                     </Link>
                   </CustomMenu.MenuItem>

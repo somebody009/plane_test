@@ -157,7 +157,7 @@ export const CreateUpdateBlockInline: FC<Props> = (props) => {
     aiService
       .createGptTask(workspaceSlug as string, projectId as string, {
         prompt: watch("name"),
-        task: "Generate a proper description for this issue.",
+        task: "Generate a proper description for this Tasks.",
       })
       .then((res) => {
         if (res.response === "")

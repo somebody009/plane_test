@@ -308,11 +308,11 @@ export const ActiveCycleDetails: React.FC<IActiveCycleDetails> = observer((props
               <div className="flex items-center gap-4 text-custom-text-200">
                 <div className="flex gap-2">
                   <LayersIcon className="h-4 w-4 flex-shrink-0" />
-                  {cycle.total_issues} issues
+                  {cycle.total_issues} Tasks
                 </div>
                 <div className="flex items-center gap-2">
                   <StateGroupIcon stateGroup="completed" height="14px" width="14px" />
-                  {cycle.completed_issues} issues
+                  {cycle.completed_issues} Tasks
                 </div>
               </div>
 
@@ -361,7 +361,7 @@ export const ActiveCycleDetails: React.FC<IActiveCycleDetails> = observer((props
       <div className="grid grid-cols-1 divide-y border-custom-border-200 lg:grid-cols-2 lg:divide-x lg:divide-y-0">
         <div className="flex flex-col justify-between p-4">
           <div>
-            <div className="text-custom-primary">High Priority Issues</div>
+            <div className="text-custom-primary">High Priority Task</div>
             <div className="my-3 flex max-h-[240px] min-h-[240px] flex-col gap-2.5 overflow-y-scroll rounded-md">
               {issues ? (
                 issues.length > 0 ? (
@@ -415,7 +415,7 @@ export const ActiveCycleDetails: React.FC<IActiveCycleDetails> = observer((props
                   ))
                 ) : (
                   <div className="grid place-items-center text-center text-sm text-custom-text-200">
-                    No issues present in the cycle.
+                    No Task present in the cycle.
                   </div>
                 )
               ) : (
@@ -466,7 +466,7 @@ export const ActiveCycleDetails: React.FC<IActiveCycleDetails> = observer((props
               <span>
                 <LayersIcon className="h-5 w-5 flex-shrink-0 text-custom-text-200" />
               </span>
-              <span>Pending Issues - {cycle.total_issues - (cycle.completed_issues + cycle.cancelled_issues)}</span>
+              <span>Pending Task - {cycle.total_issues - (cycle.completed_issues + cycle.cancelled_issues)}</span>
             </div>
           </div>
           <div className="relative h-64">

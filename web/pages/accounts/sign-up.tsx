@@ -78,7 +78,7 @@ const SignUpPage: NextPageWithLayout = () => {
       </div>
       <div className="grid h-full w-full place-items-center overflow-y-auto px-7 py-5">
         <div>
-          <h1 className="font- text-center text-2xl">SignUp on Plane</h1>
+          <h1 className="font- text-center text-2xl">SignUp </h1>
           <EmailSignUpForm onSubmit={handleSignUp} />
         </div>
       </div>

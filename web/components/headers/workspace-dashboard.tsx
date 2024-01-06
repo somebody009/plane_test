@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { LayoutGrid, Zap } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image";
 import { useTheme } from "next-themes";
 // images
-import githubBlackImage from "/public/logos/github-black.png";
-import githubWhiteImage from "/public/logos/github-white.png";
+// import githubBlackImage from "/public/logos/github-black.png";
+// import githubWhiteImage from "/public/logos/github-white.png";
 // components
 import { ProductUpdatesModal } from "components/common";
 import { Breadcrumbs } from "@plane/ui";
@@ -29,9 +29,9 @@ export const WorkspaceDashboardHeader = () => {
             </Breadcrumbs>
           </div>
         </div>
-        <div className="flex items-center gap-3 px-3">
+        {/* <div className="flex items-center gap-3 px-3">
           <a
-            href="https://plane.so/changelog"
+            href="//changelog"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-shrink-0 items-center gap-1.5 rounded bg-custom-background-80 px-3 py-1.5 text-xs font-medium"
@@ -53,7 +53,7 @@ export const WorkspaceDashboardHeader = () => {
             />
             Star us on GitHub
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -66,7 +66,7 @@ export const ProfileActivity = () => {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 font-medium text-custom-text-200 hover:underline"
                           >
-                            Issue.
+                            Tasks.
                           </a>
                         </span>
                       )}

@@ -223,7 +223,7 @@ export const PasswordForm: React.FC<Props> = (props) => {
         </div>
         <p className="text-xs text-onboarding-text-200">
           When you click <span className="text-custom-primary-100">Go to workspace</span> above, you agree with our{" "}
-          <Link href="https://plane.so/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+          <Link href="//terms-and-conditions" target="_blank" rel="noopener noreferrer">
             <span className="font-semibold underline">terms and conditions of service.</span>
           </Link>
         </p>

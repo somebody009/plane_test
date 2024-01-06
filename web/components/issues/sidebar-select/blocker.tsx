@@ -47,7 +47,7 @@ export const SidebarBlockerSelect: React.FC<Props> = ({ issueId, submitChanges, 
       setToastAlert({
         type: "error",
         title: "Error!",
-        message: "Please select at least one issue.",
+        message: "Please select at least one Tasks.",
       });
 
       return;
@@ -162,7 +162,8 @@ export const SidebarBlockerSelect: React.FC<Props> = ({ issueId, submitChanges, 
             onClick={() => setIsBlockerModalOpen(true)}
             disabled={disabled}
           >
-            Select issues
+            Select Task
+
           </button>
         </div>
       </div>

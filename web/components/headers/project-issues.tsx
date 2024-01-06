@@ -142,7 +142,7 @@ export const ProjectIssuesHeader: React.FC = observer(() => {
               <Breadcrumbs.BreadcrumbItem
                 type="text"
                 icon={<LayersIcon className="h-4 w-4 text-custom-text-300" />}
-                label="Issues"
+                label="Task"
               />
             </Breadcrumbs>
           </div>
@@ -216,7 +216,7 @@ export const ProjectIssuesHeader: React.FC = observer(() => {
                 size="sm"
                 prependIcon={<Plus />}
               >
-                Add Issue
+                Add Task
               </Button>
             </>
           )}

@@ -23,7 +23,7 @@ export const InstanceNotReady = () => {
               <Image src={instanceNotReady} className="w-full" alt="Instance not ready" />
             </div>
             <div className="flex w-full flex-col items-center gap-5 py-12 pb-20">
-              <h3 className="text-2xl font-medium">Your Plane instance isn{"'"}t ready yet</h3>
+              <h3 className="text-2xl font-medium">Your instance isn{"'"}t ready yet</h3>
               <p className="text-sm">Ask your Instance Admin to complete set-up first.</p>
             </div>
           </div>

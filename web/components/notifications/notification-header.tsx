@@ -46,7 +46,7 @@ export const NotificationHeader: React.FC<NotificationHeaderProps> = (props) => 
     unreadCount?: number;
   }> = [
     {
-      label: "My Issues",
+      label: "My Tasks",
       value: "assigned",
       unreadCount: notificationCount?.my_issues,
     },

@@ -77,7 +77,7 @@ const HomePage: NextPage = () => {
       <div className="flex items-center justify-between px-8 pb-4 sm:px-16 sm:py-5 lg:px-28 ">
         <div className="flex items-center gap-x-2 py-10">
           <Image src={BluePlaneLogoWithoutText} height={30} width={30} alt="Plane Logo" className="mr-2" />
-          <span className="text-2xl font-semibold sm:text-3xl">Plane</span>
+          <span className="text-2xl font-semibold sm:text-3xl">DSS</span>
         </div>
       </div>
 
@@ -145,7 +145,7 @@ const HomePage: NextPage = () => {
               </Button>
               <p className="text-xs text-onboarding-text-200">
                 When you click the button above, you agree with our{" "}
-                <Link href="https://plane.so/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+                <Link href="//terms-and-conditions" target="_blank" rel="noopener noreferrer">
                   <span className="font-semibold underline">terms and conditions of service.</span>
                 </Link>
               </p>
@@ -155,7 +155,7 @@ const HomePage: NextPage = () => {
             <Lightbulb className="mx-3 mr-2 h-7 w-7" />
             <p className="text-left text-sm text-onboarding-text-100">
               Try the latest features, like Tiptap editor, to write compelling responses.{" "}
-              <Link href="https://plane.so/changelog" target="_blank" rel="noopener noreferrer">
+              <Link href="" target="_blank" rel="noopener noreferrer">
                 <span className="text-sm font-medium underline hover:cursor-pointer">See new features</span>
               </Link>
             </p>

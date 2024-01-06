@@ -88,7 +88,7 @@ export const ModulesListView: React.FC = observer(() => {
       ) : (
         <NewEmptyState
           title="Map your project milestones to Modules and track aggregated work easily."
-          description="A group of issues that belong to a logical, hierarchical parent form a module. Think of them as a way to track work by project milestones. They have their own periods and deadlines as well as analytics to help you see how close or far you are from a milestone."
+          description="A group of Task that belong to a logical, hierarchical parent form a module. Think of them as a way to track work by project milestones. They have their own periods and deadlines as well as analytics to help you see how close or far you are from a milestone."
           image={emptyModule}
           comicBox={{
             title: "Modules help group work by hierarchy.",

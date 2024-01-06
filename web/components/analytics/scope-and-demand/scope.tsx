@@ -14,7 +14,7 @@ export const AnalyticsScope: React.FC<Props> = ({ defaultAnalytics }) => (
     <h5 className="p-3 text-xs text-green-500">SCOPE</h5>
     <div className="divide-y divide-custom-border-200">
       <div>
-        <h6 className="px-3 text-base font-medium">Pending issues</h6>
+        <h6 className="px-3 text-base font-medium">Pending Task</h6>
         {defaultAnalytics.pending_issue_user && defaultAnalytics.pending_issue_user.length > 0 ? (
           <BarGraph
             data={defaultAnalytics.pending_issue_user}
@@ -74,7 +74,7 @@ export const AnalyticsScope: React.FC<Props> = ({ defaultAnalytics }) => (
           <div className="px-7 py-4">
             <ProfileEmptyState
               title="No Data yet"
-              description="Analysis of pending issues by co-workers appears here."
+              description="Analysis of pending Task by co-workers appears here."
               image={emptyBarGraph}
             />
           </div>

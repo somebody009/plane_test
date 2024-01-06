@@ -188,7 +188,7 @@ export const ProjectViewIssuesHeader: React.FC = observer(() => {
             size="sm"
             prependIcon={<Plus />}
           >
-            Add Issue
+            Add Task
           </Button>
         )}
       </div>

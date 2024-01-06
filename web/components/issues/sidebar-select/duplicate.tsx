@@ -45,7 +45,7 @@ export const SidebarDuplicateSelect: React.FC<Props> = (props) => {
       setToastAlert({
         type: "error",
         title: "Error!",
-        message: "Please select at least one issue.",
+        message: "Please select at least one Tasks.",
       });
 
       return;
@@ -158,7 +158,7 @@ export const SidebarDuplicateSelect: React.FC<Props> = (props) => {
             onClick={() => setIsDuplicateModalOpen(true)}
             disabled={disabled}
           >
-            Select issues
+            Select Task
           </button>
         </div>
       </div>

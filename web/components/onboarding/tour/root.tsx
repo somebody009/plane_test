@@ -33,9 +33,9 @@ const TOUR_STEPS: {
 }[] = [
   {
     key: "issues",
-    title: "Plan with issues",
+    title: "Plan with tasks",
     description:
-      "The issue is the building block of the Plane. Most concepts in Plane are either associated with issues and their properties.",
+      "The tasks is the building block of the Plane. Most concepts in Plane are either associated with issues and their properties.",
     image: IssuesTour,
     nextStep: "cycles",
   },
@@ -60,7 +60,7 @@ const TOUR_STEPS: {
     key: "views",
     title: "Views",
     description:
-      "Create custom filters to display only the issues that matter to you. Save and share your filters in just a few clicks.",
+      "Create custom filters to display only the tasks that matter to you. Save and share your filters in just a few clicks.",
     image: ViewsTour,
     prevStep: "modules",
     nextStep: "pages",
@@ -68,7 +68,7 @@ const TOUR_STEPS: {
   {
     key: "pages",
     title: "Document with pages",
-    description: "Use Pages to quickly jot down issues when you're in a meeting or starting a day.",
+    description: "Use Pages to quickly jot down tasks when you're in a meeting or starting a day.",
     image: PagesTour,
     prevStep: "views",
   },
@@ -99,7 +99,7 @@ export const TourRoot: React.FC<Props> = observer((props) => {
             </div>
             <div className="flex h-2/5 flex-col overflow-y-auto p-6">
               <h3 className="font-semibold sm:text-xl">
-                Welcome to Plane, {user?.first_name} {user?.last_name}
+                Welcome to DSS, {user?.first_name} {user?.last_name}
               </h3>
               <p className="mt-3 text-sm text-custom-text-200">
                 We{"'"}re glad that you decided to try out Plane. You can now manage your projects with ease. Get

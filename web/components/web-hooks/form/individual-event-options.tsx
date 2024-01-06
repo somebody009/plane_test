@@ -18,8 +18,8 @@ export const INDIVIDUAL_WEBHOOK_OPTIONS: {
   },
   {
     key: "issue",
-    label: "Issues",
-    description: "Issue created, updated, deleted, added to a cycle or module",
+    label: "Task",
+    description: "Tasks created, updated, deleted, added to a cycle or module",
   },
   {
     key: "module",
@@ -28,7 +28,7 @@ export const INDIVIDUAL_WEBHOOK_OPTIONS: {
   },
   {
     key: "issue_comment",
-    label: "Issue comments",
+    label: "task comments",
     description: "Comment posted, updated, or deleted",
   },
 ];

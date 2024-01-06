@@ -26,9 +26,9 @@ const Inputs = (props: any) => {
       <h4 className="text-xs font-medium leading-5 text-custom-text-300">{projectDetail?.identifier ?? "..."}</h4>
       <input
         autoComplete="off"
-        placeholder="Issue Title"
+        placeholder="Task Title"
         {...register("name", {
-          required: "Issue title is required.",
+          required: "Task Title is required.",
         })}
         className="w-full rounded-md bg-transparent px-2 py-1.5 pl-0 text-sm font-medium leading-5 text-custom-text-200 outline-none"
       />
@@ -111,7 +111,7 @@ export const KanBanQuickAddIssueForm: React.FC<IKanBanQuickAddIssueForm> = obser
       setToastAlert({
         type: "success",
         title: "Success!",
-        message: "Issue created successfully.",
+        message: "Task created successfully.",
       });
     } catch (err: any) {
       console.error(err);
@@ -134,7 +134,7 @@ export const KanBanQuickAddIssueForm: React.FC<IKanBanQuickAddIssueForm> = obser
           >
             <Inputs formKey={formKey} register={register} setFocus={setFocus} projectDetail={projectDetail} />
           </form>
-          <div className="px-3 py-2 text-xs italic text-custom-text-200">{`Press 'Enter' to add another issue`}</div>
+          <div className="px-3 py-2 text-xs italic text-custom-text-200">{`Press 'Enter' to add another Task`}</div>
         </div>
       ) : (
         <div
@@ -142,7 +142,7 @@ export const KanBanQuickAddIssueForm: React.FC<IKanBanQuickAddIssueForm> = obser
           onClick={() => setIsOpen(true)}
         >
           <PlusIcon className="h-3.5 w-3.5 stroke-2" />
-          <span className="text-sm font-medium text-custom-primary-100">New Issue</span>
+          <span className="text-sm font-medium text-custom-primary-100">New Task</span>
         </div>
       )}
 
@@ -169,7 +169,7 @@ export const KanBanQuickAddIssueForm: React.FC<IKanBanQuickAddIssueForm> = obser
           onClick={() => setIsOpen(true)}
         >
           <PlusIcon className="h-3.5 w-3.5 stroke-2" />
-          <span className="text-sm font-medium text-custom-primary-100">New Issue</span>
+          <span className="text-sm font-medium text-custom-primary-100">New Task</span>
         </button>
       )} */}
     </div>

@@ -292,7 +292,7 @@ export const ModuleDetailsSidebar: React.FC<Props> = observer((props) => {
 
   const issueCount =
     moduleDetails.total_issues === 0
-      ? "0 Issue"
+      ? "0 Tasks"
       : moduleDetails.total_issues === moduleDetails.completed_issues
       ? moduleDetails.total_issues > 1
         ? `${moduleDetails.total_issues}`
@@ -527,7 +527,7 @@ export const ModuleDetailsSidebar: React.FC<Props> = observer((props) => {
           <div className="flex items-center justify-start gap-1">
             <div className="flex w-1/2 items-center justify-start gap-2 text-custom-text-300">
               <LayersIcon className="h-4 w-4" />
-              <span className="text-base">Issues</span>
+              <span className="text-base">Tasks</span>
             </div>
             <div className="flex w-1/2 items-center">
               <span className="px-1.5 text-sm text-custom-text-300">{issueCount}</span>

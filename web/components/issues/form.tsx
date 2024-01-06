@@ -190,7 +190,7 @@ export const IssueForm: FC<IssueFormProps> = observer((props) => {
     aiService
       .createGptTask(workspaceSlug as string, projectId as string, {
         prompt: issueName,
-        task: "Generate a proper description for this issue.",
+        task: "Generate a proper description for this task.",
       })
       .then((res) => {
         if (res.response === "")
@@ -198,7 +198,7 @@ export const IssueForm: FC<IssueFormProps> = observer((props) => {
             type: "error",
             title: "Error!",
             message:
-              "Issue title isn't informative enough to generate the description. Please try with a different title.",
+              "Task Title isn't informative enough to generate the description. Please try with a different title.",
           });
         else handleAiAssistance(res.response_html);
       })
@@ -284,7 +284,7 @@ export const IssueForm: FC<IssueFormProps> = observer((props) => {
               />
             )}
             <h3 className="text-xl font-semibold leading-6 text-custom-text-100">
-              {status ? "Update" : "Create"} Issue
+              {status ? "Update" : "Create"} Tasks
             </h3>
           </div>
           {watch("parent") &&
@@ -335,7 +335,7 @@ export const IssueForm: FC<IssueFormProps> = observer((props) => {
                         onChange={onChange}
                         ref={ref}
                         hasError={Boolean(errors.name)}
-                        placeholder="Issue Title"
+                        placeholder="Task Title"
                         className="w-full resize-none text-xl focus:border-blue-400"
                       />
                     )}
@@ -561,10 +561,10 @@ export const IssueForm: FC<IssueFormProps> = observer((props) => {
                         placement="bottom-start"
                       >
                         <CustomMenu.MenuItem className="!p-1" onClick={() => setParentIssueListModalOpen(true)}>
-                          Change parent issue
+                          Change parent Task
                         </CustomMenu.MenuItem>
                         <CustomMenu.MenuItem className="!p-1" onClick={() => setValue("parent", null)}>
-                          Remove parent issue
+                          Remove parent Task
                         </CustomMenu.MenuItem>
                       </CustomMenu>
                     ) : (
@@ -626,11 +626,11 @@ export const IssueForm: FC<IssueFormProps> = observer((props) => {
             <Button variant="primary" size="sm" type="submit" loading={isSubmitting}>
               {status
                 ? isSubmitting
-                  ? "Updating Issue..."
-                  : "Update Issue"
+                  ? "Updating Task..."
+                  : "Update Task"
                 : isSubmitting
-                ? "Adding Issue..."
-                : "Add Issue"}
+                ? "Adding Task..."
+                : "Add Task"}
             </Button>
           </div>
         </div>

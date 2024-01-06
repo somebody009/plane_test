@@ -59,11 +59,11 @@ export const ModuleEmptyState: React.FC<Props> = observer((props) => {
       />
       <div className="grid h-full w-full place-items-center">
         <EmptyState
-          title="Module issues will appear here"
-          description="Issues help you track individual pieces of work. With Issues, keep track of what's going on, who is working on it, and what's done."
+          title="Module Task will appear here"
+          description="Task help you track individual pieces of work. With Task, keep track of what's going on, who is working on it, and what's done."
           image={emptyIssue}
           primaryButton={{
-            text: "New issue",
+            text: "New Task",
             icon: <PlusIcon className="h-3 w-3" strokeWidth={2} />,
             onClick: () => {
               setTrackElement("MODULE_EMPTY_STATE");
@@ -77,7 +77,7 @@ export const ModuleEmptyState: React.FC<Props> = observer((props) => {
               onClick={() => setModuleIssuesListModal(true)}
               disabled={!isEditingAllowed}
             >
-              Add an existing issue
+              Add an existing Task
             </Button>
           }
           disabled={!isEditingAllowed}

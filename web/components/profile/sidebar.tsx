@@ -208,28 +208,28 @@ export const ProfileSidebar = () => {
                                   <div className="h-2.5 w-2.5 rounded-sm bg-[#203b80]" />
                                   Created
                                 </div>
-                                <div className="font-medium">{project.created_issues} Issues</div>
+                                <div className="font-medium">{project.created_issues} Tasks</div>
                               </div>
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
                                   <div className="h-2.5 w-2.5 rounded-sm bg-[#3f76ff]" />
                                   Assigned
                                 </div>
-                                <div className="font-medium">{project.assigned_issues} Issues</div>
+                                <div className="font-medium">{project.assigned_issues} Tasks</div>
                               </div>
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
                                   <div className="h-2.5 w-2.5 rounded-sm bg-[#f59e0b]" />
                                   Due
                                 </div>
-                                <div className="font-medium">{project.pending_issues} Issues</div>
+                                <div className="font-medium">{project.pending_issues} Tasks</div>
                               </div>
                               <div className="flex items-center justify-between gap-2">
                                 <div className="flex items-center gap-2">
                                   <div className="h-2.5 w-2.5 rounded-sm bg-[#16a34a]" />
                                   Completed
                                 </div>
-                                <div className="font-medium">{project.completed_issues} Issues</div>
+                                <div className="font-medium">{project.completed_issues} Tasks</div>
                               </div>
                             </div>
                           </Disclosure.Panel>

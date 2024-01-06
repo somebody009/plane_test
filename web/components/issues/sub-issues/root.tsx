@@ -136,8 +136,8 @@ export const SubIssuesRoot: React.FC<ISubIssuesRoot> = observer((props) => {
         handleIssuesLoader({ key: "delete", issueId: issue?.id });
         setToastAlert({
           type: "success",
-          title: `Issue removed!`,
-          message: `Issue removed successfully.`,
+          title: `Task removed!`,
+          message: `Task removed successfully.`,
         });
       })
       .catch(() => {
@@ -156,7 +156,7 @@ export const SubIssuesRoot: React.FC<ISubIssuesRoot> = observer((props) => {
       setToastAlert({
         type: "success",
         title: "Link Copied!",
-        message: "Issue link copied to clipboard.",
+        message: "Task link copied to clipboard.",
       });
     });
   };
@@ -230,13 +230,13 @@ export const SubIssuesRoot: React.FC<ISubIssuesRoot> = observer((props) => {
                       className="cursor-pointer rounded border border-custom-border-100 p-1.5 px-2 shadow transition-all hover:bg-custom-background-80"
                       onClick={() => handleIssueCrudOperation("create", parentIssue?.id)}
                     >
-                      Add sub-issue
+                      Add sub-Task
                     </div>
                     <div
                       className="cursor-pointer rounded border border-custom-border-100 p-1.5 px-2 shadow transition-all hover:bg-custom-background-80"
                       onClick={() => handleIssueCrudOperation("existing", parentIssue?.id)}
                     >
-                      Add an existing issue
+                      Add an existing Task
                     </div>
                   </div>
                 )}
@@ -267,7 +267,7 @@ export const SubIssuesRoot: React.FC<ISubIssuesRoot> = observer((props) => {
                   label={
                     <>
                       <Plus className="h-3 w-3" />
-                      Add sub-issue
+                      Add sub-Task
                     </>
                   }
                   buttonClassName="whitespace-nowrap"
@@ -289,7 +289,7 @@ export const SubIssuesRoot: React.FC<ISubIssuesRoot> = observer((props) => {
                       handleIssueCrudOperation("existing", parentIssue?.id);
                     }}
                   >
-                    Add an existing issue
+                    Add an existing Task
                   </CustomMenu.MenuItem>
                 </CustomMenu>
               </div>
@@ -297,13 +297,13 @@ export const SubIssuesRoot: React.FC<ISubIssuesRoot> = observer((props) => {
           ) : (
             isEditable && (
               <div className="flex items-center justify-between">
-                <div className="py-2 text-xs italic text-custom-text-300">No Sub-Issues yet</div>
+                <div className="py-2 text-xs italic text-custom-text-300">No Sub-Tasks yet</div>
                 <div>
                   <CustomMenu
                     label={
                       <>
                         <Plus className="h-3 w-3" />
-                        Add sub-issue
+                        Add sub-Task
                       </>
                     }
                     buttonClassName="whitespace-nowrap"
@@ -325,7 +325,7 @@ export const SubIssuesRoot: React.FC<ISubIssuesRoot> = observer((props) => {
                         handleIssueCrudOperation("existing", parentIssue?.id);
                       }}
                     >
-                      Add an existing issue
+                      Add an existing Task
                     </CustomMenu.MenuItem>
                   </CustomMenu>
                 </div>

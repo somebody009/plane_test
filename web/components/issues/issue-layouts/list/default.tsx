@@ -184,7 +184,7 @@ export const List: React.FC<IList> = (props) => {
           issueIds={issueIds as TUnGroupedIssues}
           issues={issues}
           group_by={group_by}
-          list={[{ id: `null`, title: `All Issues` }]}
+          list={[{ id: `null`, title: `All Tasks` }]}
           listKey={`id`}
           is_list={true}
           states={states}

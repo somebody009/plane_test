@@ -66,7 +66,7 @@ export const WorkspaceSidebarQuickAction = observer(() => {
               }}
             >
               <PenSquare className="h-4 w-4 text-custom-sidebar-text-300" />
-              {!isSidebarCollapsed && <span className="text-sm font-medium">New Issue</span>}
+              {!isSidebarCollapsed && <span className="text-sm font-medium">New Tasks</span>}
             </button>
 
             {storedValue && Object.keys(JSON.parse(storedValue)).length > 0 && (
@@ -95,7 +95,7 @@ export const WorkspaceSidebarQuickAction = observer(() => {
                       className="flex w-full flex-shrink-0 items-center rounded border-[0.5px] border-custom-border-300 bg-custom-background-100 px-3 py-[10px] text-sm text-custom-text-300 shadow"
                     >
                       <PenSquare size={16} className="mr-2 !text-lg !leading-4 text-custom-sidebar-text-300" />
-                      Last Drafted Issue
+                      Last Drafted Tasks
                     </button>
                   </div>
                 </div>

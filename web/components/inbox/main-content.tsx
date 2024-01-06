@@ -143,10 +143,10 @@ export const InboxMainContent: React.FC = observer(() => {
             <Inbox size={60} strokeWidth={1.5} />
             {issuesList && issuesList.length > 0 ? (
               <span className="text-custom-text-200">
-                {issuesList?.length} issues found. Select an issue from the sidebar to view its details.
+                {issuesList?.length} Task found. Select an Task from the sidebar to view its details.
               </span>
             ) : (
-              <span className="text-custom-text-200">No issues found</span>
+              <span className="text-custom-text-200">No task found</span>
             )}
           </div>
         </div>
@@ -180,24 +180,24 @@ export const InboxMainContent: React.FC = observer(() => {
               {issueStatus === -2 ? (
                 <>
                   <AlertTriangle size={18} strokeWidth={2} />
-                  <p>This issue is still pending.</p>
+                  <p>This task is still pending.</p>
                 </>
               ) : issueStatus === -1 ? (
                 <>
                   <XCircle size={18} strokeWidth={2} />
-                  <p>This issue has been declined.</p>
+                  <p>This task has been declined.</p>
                 </>
               ) : issueStatus === 0 ? (
                 <>
                   <Clock size={18} strokeWidth={2} />
                   {new Date(issueDetails.issue_inbox[0].snoozed_till ?? "") < new Date() ? (
                     <p>
-                      This issue was snoozed till{" "}
+                      This task was snoozed till{" "}
                       {renderShortDateWithYearFormat(issueDetails.issue_inbox[0].snoozed_till ?? "")}.
                     </p>
                   ) : (
                     <p>
-                      This issue has been snoozed till{" "}
+                      This task has been snoozed till{" "}
                       {renderShortDateWithYearFormat(issueDetails.issue_inbox[0].snoozed_till ?? "")}.
                     </p>
                   )}
@@ -205,20 +205,20 @@ export const InboxMainContent: React.FC = observer(() => {
               ) : issueStatus === 1 ? (
                 <>
                   <CheckCircle2 size={18} strokeWidth={2} />
-                  <p>This issue has been accepted.</p>
+                  <p>This task has been accepted.</p>
                 </>
               ) : issueStatus === 2 ? (
                 <>
                   <Copy size={18} strokeWidth={2} />
                   <p className="flex items-center gap-1">
-                    This issue has been marked as a duplicate of
+                    This task has been marked as a duplicate of
                     <a
                       href={`/${workspaceSlug}/projects/${projectId}/issues/${issueDetails.issue_inbox[0].duplicate_to}`}
                       target="_blank"
                       rel="noreferrer"
                       className="flex items-center gap-2 underline"
                     >
-                      this issue <ExternalLink size={12} strokeWidth={2} />
+                      this task <ExternalLink size={12} strokeWidth={2} />
                     </a>
                     .
                   </p>

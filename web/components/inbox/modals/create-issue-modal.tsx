@@ -145,7 +145,7 @@ export const CreateInboxIssueModal: React.FC<Props> = observer((props) => {
             type: "error",
             title: "Error!",
             message:
-              "Issue title isn't informative enough to generate the description. Please try with a different title.",
+              "Task Title isn't informative enough to generate the description. Please try with a different title.",
           });
         else handleAiAssistance(res.response_html);
       })
@@ -197,7 +197,7 @@ export const CreateInboxIssueModal: React.FC<Props> = observer((props) => {
               <Dialog.Panel className="relative transform rounded-lg bg-custom-background-100 p-5 text-left shadow-custom-shadow-md transition-all sm:w-full sm:max-w-2xl">
                 <form onSubmit={handleSubmit(handleFormSubmit)}>
                   <div className="space-y-5">
-                    <h3 className="text-xl font-semibold leading-6 text-custom-text-100">Create Inbox Issue</h3>
+                    <h3 className="text-xl font-semibold leading-6 text-custom-text-100">Create Inbox Task</h3>
                     <div className="space-y-3">
                       <div className="mt-2 space-y-3">
                         <div>
@@ -320,7 +320,7 @@ export const CreateInboxIssueModal: React.FC<Props> = observer((props) => {
                         Discard
                       </Button>
                       <Button variant="primary" size="sm" type="submit" loading={isSubmitting}>
-                        {isSubmitting ? "Adding Issue..." : "Add Issue"}
+                        {isSubmitting ? "Adding Task..." : "Add Task"}
                       </Button>
                     </div>
                   </div>

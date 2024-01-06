@@ -120,7 +120,7 @@ const ProgressChart: React.FC<Props> = ({ distribution, startDate, endDate, tota
         sliceTooltip={(datum) => (
           <div className="rounded-md border border-custom-border-200 bg-custom-background-80 p-2 text-xs">
             {datum.slice.points[0].data.yFormatted}
-            <span className="text-custom-text-200"> issues pending on </span>
+            <span className="text-custom-text-200"> Task pending on </span>
             {datum.slice.points[0].data.xFormatted}
           </div>
         )}

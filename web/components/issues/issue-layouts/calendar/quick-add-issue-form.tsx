@@ -47,9 +47,9 @@ const Inputs = (props: any) => {
       <input
         type="text"
         autoComplete="off"
-        placeholder="Issue Title"
+        placeholder="Task Title"
         {...register("name", {
-          required: "Issue title is required.",
+          required: "Task Title is required.",
         })}
         className="w-full rounded-md bg-transparent py-1.5 pr-2 text-xs font-medium leading-5 text-custom-text-200 outline-none"
       />
@@ -135,7 +135,7 @@ export const CalendarQuickAddIssueForm: React.FC<Props> = observer((props) => {
       setToastAlert({
         type: "success",
         title: "Success!",
-        message: "Issue created successfully.",
+        message: "Task created successfully.",
       });
     } catch (err: any) {
       console.error(err);
@@ -178,7 +178,7 @@ export const CalendarQuickAddIssueForm: React.FC<Props> = observer((props) => {
             onClick={handleOpen}
           >
             <PlusIcon className="h-3.5 w-3.5 stroke-2" />
-            <span className="text-sm font-medium text-custom-primary-100">New Issue</span>
+            <span className="text-sm font-medium text-custom-primary-100">New Task</span>
           </button>
         </div>
       )}

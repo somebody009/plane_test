@@ -15,7 +15,7 @@ export const LatestFeatureBlock = () => {
         <Lightbulb className="mx-3 mr-2 h-7 w-7" />
         <p className="text-left text-sm text-onboarding-text-100">
           Pages gets a facelift! Write anything and use Galileo to help you start.{" "}
-          <Link href="https://plane.so/changelog" target="_blank" rel="noopener noreferrer">
+          <Link href="//changelog" target="_blank" rel="noopener noreferrer">
             <span className="text-sm font-medium underline hover:cursor-pointer">Learn more</span>
           </Link>
         </p>

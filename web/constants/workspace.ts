@@ -41,14 +41,14 @@ export const IMPORTERS_LIST = [
     provider: "github",
     type: "import",
     title: "GitHub",
-    description: "Import issues from GitHub repositories and sync them.",
+    description: "Import task from GitHub repositories and sync them.",
     logo: GithubLogo,
   },
   {
     provider: "jira",
     type: "import",
     title: "Jira",
-    description: "Import issues and epics from Jira projects and epics.",
+    description: "Import task and epics from Jira projects and epics.",
     logo: JiraLogo,
   },
 ];
@@ -58,21 +58,21 @@ export const EXPORTERS_LIST = [
     provider: "csv",
     type: "export",
     title: "CSV",
-    description: "Export issues to a CSV file.",
+    description: "Export task to a CSV file.",
     logo: CSVLogo,
   },
   {
     provider: "xlsx",
     type: "export",
     title: "Excel",
-    description: "Export issues to a Excel file.",
+    description: "Export task to a Excel file.",
     logo: ExcelLogo,
   },
   {
     provider: "json",
     type: "export",
     title: "JSON",
-    description: "Export issues to a JSON file.",
+    description: "Export task to a JSON file.",
     logo: JSONLogo,
   },
 ];
@@ -83,7 +83,7 @@ export const DEFAULT_GLOBAL_VIEWS_LIST: {
 }[] = [
   {
     key: "all-issues",
-    label: "All issues",
+    label: "All tasks",
   },
   {
     key: "assigned",

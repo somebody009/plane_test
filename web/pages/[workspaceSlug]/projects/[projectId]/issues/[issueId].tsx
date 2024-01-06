@@ -108,10 +108,10 @@ const IssueDetailsPage: NextPageWithLayout = () => {
       {error ? (
         <EmptyState
           image={emptyIssue}
-          title="Issue does not exist"
-          description="The issue you are looking for does not exist, has been archived, or has been deleted."
+          title="Tasks does not exist"
+          description="The Tasks you are looking for does not exist, has been archived, or has been deleted."
           primaryButton={{
-            text: "View other issues",
+            text: "View other Tasks",
             onClick: () => router.push(`/${workspaceSlug}/projects/${projectId}/issues`),
           }}
         />
