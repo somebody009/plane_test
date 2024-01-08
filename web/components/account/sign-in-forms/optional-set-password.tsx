@@ -94,7 +94,7 @@ export const OptionalSetPasswordForm: React.FC<Props> = (props) => {
           When you click{" "}
           <span className="text-custom-primary-100">{isOnboarded ? "Go to workspace" : "Set up workspace"}</span> above,
           you agree with our{" "}
-          <Link href="//terms-and-conditions" target="_blank" rel="noopener noreferrer">
+          <Link href="/" target="_blank" rel="noopener noreferrer">
             <span className="font-semibold underline">terms and conditions of service.</span>
           </Link>
         </p>

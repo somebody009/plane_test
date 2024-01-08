@@ -251,7 +251,7 @@ export const UniqueCodeForm: React.FC<Props> = (props) => {
         {showTermsAndConditions && (
           <p className="text-xs text-onboarding-text-200">
             When you click the button above, you agree with our{" "}
-            <Link href="//terms-and-conditions" target="_blank" rel="noopener noreferrer">
+            <Link href="/" target="_blank" rel="noopener noreferrer">
               <span className="font-semibold underline">terms and conditions of service.</span>
             </Link>
           </p>
